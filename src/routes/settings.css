@@ -1,0 +1,23 @@
+.settings-form {
+  display: grid;
+  gap: var(--space-6);
+  max-width: 40rem;
+}
+
+.settings-fieldset {
+  display: grid;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.settings-select {
+  max-width: 16rem;
+}
+
+.settings-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}

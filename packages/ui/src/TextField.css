@@ -1,0 +1,48 @@
+.text-field {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.text-field__label {
+  color: var(--color-text-secondary);
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+.text-field__control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.text-field__control > svg {
+  position: absolute;
+  left: var(--space-3);
+  color: var(--color-text-secondary);
+  pointer-events: none;
+}
+
+.text-field__input {
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0 var(--space-3);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-size: var(--text-sm);
+}
+
+.text-field--with-icon .text-field__input {
+  padding-left: 2.25rem;
+}
+
+.text-field__input::placeholder {
+  color: var(--color-text-secondary);
+  opacity: 0.8;
+}
+
+.text-field__input:focus-visible {
+  outline: none;
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 3px var(--color-brand-subtle);
+}

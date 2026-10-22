@@ -1,0 +1,72 @@
+:root {
+  /* Surfaces */
+  --color-bg: #f5f6f8;
+  --color-surface: #ffffff;
+  --color-surface-subtle: #f8f9fb;
+  --color-border: #e3e6eb;
+  --color-border-strong: #cfd4dc;
+
+  /* Text */
+  --color-text: #1b2230;
+  --color-text-secondary: #4a5565;
+  --color-text-muted: #9ba3af;
+  --color-text-inverse: #ffffff;
+
+  /* Brand */
+  --color-brand: #0e5a63;
+  --color-brand-hover: #0b4950;
+  --color-brand-subtle: #e6f2f3;
+  --color-focus: #1f6feb;
+
+  /* Feedback */
+  --color-danger: #b42318;
+  --color-danger-hover: #912018;
+  --color-danger-subtle: #fdecea;
+  --color-success: #0b6b55;
+  --color-success-subtle: #e3f5ef;
+
+  /* Navigation */
+  --color-nav-bg: #0f1c2e;
+  --color-nav-text: #c3cddb;
+  --color-nav-active-bg: #1d3047;
+  --color-nav-active-text: #ffffff;
+
+  /* Status tones */
+  --tone-neutral-fg: #3b4757;
+  --tone-neutral-bg: #eef1f5;
+  --tone-info-fg: #1849a9;
+  --tone-info-bg: #e8f0fe;
+  --tone-success-fg: #0b6b55;
+  --tone-success-bg: #e3f5ef;
+  --tone-warning-fg: #8a4a00;
+  --tone-warning-bg: #fff3dc;
+  --tone-danger-fg: #a8231a;
+  --tone-danger-bg: #fdecea;
+
+  /* Type */
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.875rem;
+
+  /* Shape */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 2px rgb(16 24 40 / 6%);
+  --shadow-md: 0 4px 12px rgb(16 24 40 / 10%);
+  --shadow-lg: 0 20px 40px rgb(16 24 40 / 18%);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+}

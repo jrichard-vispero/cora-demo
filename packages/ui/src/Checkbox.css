@@ -1,0 +1,23 @@
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.checkbox__input {
+  flex: none;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0.15rem 0 0;
+  accent-color: var(--color-brand);
+}
+
+.checkbox__label {
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.checkbox__description {
+  color: var(--color-text-secondary);
+  font-size: var(--text-xs);
+}

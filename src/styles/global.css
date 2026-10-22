@@ -1,0 +1,96 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+  white-space: nowrap;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.numeric {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+/* Data tables */
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  vertical-align: middle;
+}
+
+.data-table thead th {
+  background: var(--color-surface-subtle);
+  color: var(--color-text-secondary);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.data-table tbody tr:hover {
+  background: var(--color-surface-subtle);
+}
+
+.data-table tbody tr:last-child td,
+.data-table tfoot tr:last-child > * {
+  border-bottom: 0;
+}
+
+.data-table tfoot tr:first-child > * {
+  border-top: 1px solid var(--color-border);
+}
+
+.data-table .numeric {
+  text-align: right;
+}
+
+.cell-primary {
+  font-weight: 500;
+}
+
+.cell-secondary {
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+}
+
+.status-message {
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-success-subtle);
+  color: var(--color-success);
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.status-message--error {
+  background: var(--color-danger-subtle);
+  color: var(--color-danger);
+}
+
+.status-message:empty {
+  padding: 0;
+  background: none;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
