@@ -74,7 +74,9 @@ export default function OrderDetailPage() {
           </p>
         </div>
         <div className="order-header__actions no-print">
-          <IconButton icon={<CopyIcon size={18} />} label="Copy order number" onClick={copyOrderNumber} />
+          <button type="button" className="icon-button icon-button--md" onClick={copyOrderNumber}>
+            <CopyIcon size={18} />
+          </button>
           <IconButton icon={<PrinterIcon size={18} />} onClick={() => window.print()} />
           {isOpen(order) && (
             <Button variant="danger" onClick={() => setConfirmingCancel(true)}>
