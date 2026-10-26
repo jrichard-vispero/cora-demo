@@ -18,7 +18,7 @@ The app carries deliberate accessibility issues for demos. They live in ordinary
 - [Vitest](https://vitest.dev/) and [Testing Library](https://testing-library.com/) for logic and components.
 - [Playwright Test](https://playwright.dev/) for user flows in the browser.
 - [Oxlint](https://oxc.rs/docs/guide/usage/linter) for linting.
-- GitHub Actions for CI.
+- GitHub Actions for CI, SAGE's accessibility scan included.
 
 ## Requirements
 
