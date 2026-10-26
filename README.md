@@ -6,7 +6,7 @@ Wrenmoor Supply Co. is fictional. So are its customers, people, addresses and or
 
 ## The SAGE showcase
 
-This repository is the showcase app for [Vispero SAGE](https://sage.vispero.com/docs/), which scans web apps for accessibility issues. It installs the published `@vispero/sage` from npm, the way a customer's project does. [SHOWCASE.md](SHOWCASE.md) says what the app is built to show.
+This repository is the showcase app for [Vispero SAGE](https://sage.vispero.com/docs/), which scans web apps for accessibility issues. It installs the published `@vispero/sage` from npm, the way a customer's project does.
 
 ## Stack
 
