@@ -1,5 +1,5 @@
 /// <reference types="vitest/config" />
-import sourceStamps from '@vispero/sage/vite'
+import sourceStamps from '@vispero/cora/vite'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 

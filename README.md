@@ -4,9 +4,9 @@ Wrenmoor Orders is the order-management dashboard of Wrenmoor Supply Co., a whol
 
 Wrenmoor Supply Co. is fictional. So are its customers, people, addresses and orders.
 
-## The SAGE showcase
+## The CORA showcase
 
-This repository is the showcase app for [Vispero SAGE](https://sage.vispero.com/docs/), which scans web apps for accessibility issues. It installs the published `@vispero/sage` from npm, the way a customer's project does.
+This repository is the showcase app for [Vispero CORA](https://cora.vispero.com/docs/), which scans web apps for accessibility issues. It installs the published `@vispero/cora` from npm, the way a customer's project does.
 
 ## Stack
 
@@ -22,7 +22,7 @@ This repository is the showcase app for [Vispero SAGE](https://sage.vispero.com/
 
 - Node.js 22.18 or later. `.nvmrc` names the version CI uses.
 - npm.
-- Google Chrome, for SAGE scans.
+- Google Chrome, for CORA scans.
 
 ## Run it
 
@@ -56,34 +56,34 @@ npm run test:e2e
 
 `npm run test:e2e` builds the app, serves the build on port 4173 and runs the tests against it.
 
-## Scan it with SAGE
+## Scan it with CORA
 
-A scan needs a SAGE account. Sign in once on the machine:
+A scan needs a CORA account. Sign in once on the machine:
 
 ```sh
-npx sage auth login
+npx cora auth login
 ```
 
-In CI, set `SAGE_TOKEN` to a CI token instead. [Accounts](https://sage.vispero.com/docs/accounts/) covers both.
+In CI, set `CORA_TOKEN` to a CI token instead. [Accounts](https://cora.vispero.com/docs/accounts/) covers both.
 
 Start the app, then scan it in a second terminal:
 
 ```sh
 npm run dev
-npx sage scan
+npx cora scan
 ```
 
-`sage.config.ts` sets the app's address and the pages to scan. The scan prints a summary, writes its results to `.sage/runs/`, and exits with code 1 when it finds new issues. [Baselines and the gate](https://sage.vispero.com/docs/baselines/) explains how to accept the issues a project has today.
+`cora.config.ts` sets the app's address and the pages to scan. The scan prints a summary, writes its results to `.cora/runs/`, and exits with code 1 when it finds new issues. [Baselines and the gate](https://cora.vispero.com/docs/baselines/) explains how to accept the issues a project has today.
 
-`vite.config.ts` registers SAGE's source stamps plugin, so each finding names the file and line to fix. The plugin stamps the app's own markup, not the design system's build. The dev server always stamps pages. A build stamps them only when asked:
+`vite.config.ts` registers CORA's source stamps plugin, so each finding names the file and line to fix. The plugin stamps the app's own markup, not the design system's build. The dev server always stamps pages. A build stamps them only when asked:
 
 ```sh
-SAGE_SOURCE_STAMPS=1 npm run build
+CORA_SOURCE_STAMPS=1 npm run build
 npm run preview
-npx sage scan --base-url http://localhost:4173
+npx cora scan --base-url http://localhost:4173
 ```
 
-A coding agent can scan the pages it opens, such as after it opens a menu or a dialog, through SAGE's MCP server. See [Coding agents](https://sage.vispero.com/docs/agents/).
+A coding agent can scan the pages it opens, such as after it opens a menu or a dialog, through CORA's MCP server. See [Coding agents](https://cora.vispero.com/docs/agents/).
 
 ## Project layout
 
